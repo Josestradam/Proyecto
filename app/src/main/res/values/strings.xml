@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Proyecto</string>
+    <string name="correo">Correo</string>
+    <string name="contraseña">Contraseña</string>
+    <string name="olvidar">¿Haz olviddo tu contraseña?</string>
+    <string name="recuperar">Recuperar Contraseña</string>
+    <string name="enviar">Enviar</string>
+    <string name="tv_registro">Registrarse</string>
+    <string name="et_nombre">Nombre</string>
+    <string name="et_edad">Edad</string>
+    <string name="et_email">Correo</string>
+    <string name="et_phone">Celular</string>
+    <string name="btn_ingresar">Ingresar</string>
+    <string name="todo">TODO</string>
+</resources>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context=".RegistrarActivity">
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="318dp"
+        android:layout_height="188dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/nombre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvregistro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/amaranth_bold"
+        android:text="@string/tv_registro"
+        android:textColor="@color/colorWhite"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivLogo"/>
+
+    <EditText
+        android:id="@+id/etnombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="@string/et_nombre"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:textSize="20sp"
+        android:fontFamily="@font/amaranth_bold"
+        android:autofillHints="@color/colorWhite"
+        android:drawableStart="@drawable/ic_person"
+        android:drawablePadding="6dp"
+        android:background="@color/colorNegro"
+        android:textColorHint="@color/colorWhite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvregistro" />
+
+    <EditText
+        android:id="@+id/etedad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="datetime"
+        android:hint="@string/et_edad"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:textSize="20sp"
+        android:fontFamily="@font/amaranth_bold"
+        android:autofillHints="@color/colorWhite"
+        android:drawableStart="@drawable/ic_edad"
+        android:drawablePadding="6dp"
+        android:background="@color/colorNegro"
+        android:textColorHint="@color/colorWhite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etnombre" />
+
+    <EditText
+        android:id="@+id/etphone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:hint="@string/et_phone"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:textSize="20sp"
+        android:fontFamily="@font/amaranth_bold"
+        android:autofillHints="@color/colorWhite"
+        android:drawableStart="@drawable/ic_phone_cel"
+        android:drawablePadding="6dp"
+        android:background="@color/colorNegro"
+        android:textColorHint="@color/colorWhite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etedad" />
+
+    <EditText
+        android:id="@+id/etemail1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:hint="@string/et_email"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:textSize="20sp"
+        android:fontFamily="@font/amaranth_bold"
+        android:autofillHints="@color/colorWhite"
+        android:drawableStart="@drawable/ic_mail_correo"
+        android:drawablePadding="6dp"
+        android:background="@color/colorNegro"
+        android:textColorHint="@color/colorWhite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etphone" />
+
+    <EditText
+        android:id="@+id/etpassword1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:drawableStart="@drawable/ic_key_contra"
+        android:drawablePadding="6dp"
+        android:fontFamily="@font/amaranth_bold"
+        android:hint="@string/contraseña"
+        android:inputType="textPassword"
+        android:autofillHints="@color/colorWhite"
+        android:textSize="20sp"
+        android:background="@color/colorNegro"
+        android:textColorHint="@color/colorWhite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etemail1" />
+
+    <TextView
+        android:id="@+id/tventrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="196dp"
+        android:layout_marginBottom="64dp"
+        android:fontFamily="@font/amaranth_bold"
+        android:text="@string/btn_ingresar"
+        android:textColor="@color/colorWhite"
+        android:textSize="23sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/bnflecha"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="48dp"
+        android:src="@drawable/next"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:contentDescription="@string/todo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
